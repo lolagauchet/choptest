@@ -1,0 +1,93 @@
+.section__basic{
+    padding-top: 62px;
+    &-intro{
+        display: block;
+        font-size: 26px;
+        margin-bottom: 132px;
+        position: relative;
+        text-align: center;
+        &:after{
+            background-color: $grey;
+            content: "";
+            height: 0.5px;
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 1;
+        }
+        span{
+            background-color: $white;
+            padding-left: 55px;
+            padding-right: 55px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &-line{
+        background-color: $grey;
+        height: 1px;
+    }
+    .section__first{
+        display: grid;
+        column-gap: 100px;
+        margin-bottom: 188px;
+        grid-template-columns: 1fr 1fr;
+        &-title{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 34px;
+        }
+        &-desc{
+            font-weight: 300;
+            margin-bottom: 34px;
+            opacity: .8;
+        }
+        &-img{
+            max-height: 360px;
+            overflow: hidden;
+            img{
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+    .section__second{
+        &-title{
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.4;
+            max-width: 865px;
+            margin-bottom: 80px;
+        }
+        &-list{
+            column-gap: 58px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    .section__item{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        &-icon{
+            margin-bottom: 22px;
+            img{
+                border-radius: 2px;
+                background-color: rgba($tertiary_color, .1);
+                padding: 10px;
+            }
+        }
+        &-title{
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        &-desc{
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+}
