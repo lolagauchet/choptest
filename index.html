@@ -8,7 +8,7 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
@@ -46,27 +46,24 @@
                             <img src="assets/images/icon-01.svg" alt="first icon">
                         </div>
                         <h3 class="section__item-title">High-quality, cost-effective courses</h3>
-                        <p class="section__item-desc">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                            posuere cubilia Curae; Donec
-                            velit neque, auctor sit amet aliquam vel.</p>
+                        <p class="section__item-desc">Mauris at velit mattis risus gravida finielitbus condimentum quis
+                            arcu. Etiam eget erat feugiat, auctor nisi ac, semper nibh.</p>
                     </li>
                     <li class="section__item">
                         <div class="section__item-icon">
                             <img src="assets/images/icon-02.svg" alt="second icon">
                         </div>
-                        <h3 class="section__item-title">High experienced, qualified lecturers</h3>
-                        <p class="section__item-desc">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                            posuere cubilia Curae; Donec
-                            velit neque, auctor sit amet aliquam vel.</p>
+                        <h3 class="section__item-title">High Experienced, Qualified Lecturers</h3>
+                        <p class="section__item-desc">Deleniti atque corrupti quos dolored et quad molestias excepturi
+                            sint occaecati cupuditate non provident.</p>
                     </li>
                     <li class="section__item">
                         <div class="section__item-icon">
                             <img src="assets/images/icon-03.svg" alt="third icon">
                         </div>
                         <h3 class="section__item-title">Easy-yo-used online student portal</h3>
-                        <p class="section__item-desc">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                            posuere cubilia Curae; Donec
-                            velit neque, auctor sit amet aliquam vel.</p>
+                        <p class="section__item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Proin
+                            tincidunt imperdiet finibus luctus quis ligula et mauris.</p>
                     </li>
                 </ul>
             </div>
@@ -102,39 +99,84 @@
                 </li>
             </ul>
         </div>
-        <div class="section__questions container container-small">
+        <div class="section__news container container-small">
+            <ul class="section__news-tags">
+                <li data-tag="all" class="active js_tag">All</li>
+                <li data-tag="news" class="js_tag">News</li>
+                <li data-tag="insights" class="js_tag">Insights</li>
+                <li data-tag="events" class="js_tag">Events</li>
+                <li data-tag="resources" class="js_tag">Resources</li>
+            </ul>
+            <div class="section__news-list js_news_list">
+                <a href="#" class="js_news section__news-item active" data-tag="insights">
+
+                    <div class="section__news-img">
+                        <img src="assets/images/image-02.png" alt="image 2">
+                    </div>
+                    <span class="section__news-tag">Insights</span>
+                    <h3 class="section__news-title">Aliquam convallis iaculis et sodales non justo.</h3>
+                    <span class="section__news-date">Jan 01, 2020 - Robert O'Malley</span>
+                </a>
+                <a href="#" class="js_news section__news-item active" data-tag="news">
+
+                    <div class="section__news-img">
+                        <img src="assets/images/image-03.png" alt="image 3"></div>
+                    <span class="section__news-tag">news</span>
+                    <h3 class="section__news-title">Orem ipsum dolor sit amet, consectetur adipisicing</h3>
+                    <span class="section__news-date">Jan 13, 2020 - Robert O'Malley</span>
+                </a>
+                <a href="#" class="js_news section__news-item active" data-tag="events">
+
+                    <div class="section__news-img">
+                        <img src="assets/images/image-04.png" alt="image 4"></div>
+                    <span class="section__news-tag">events</span>
+                    <h3 class="section__news-title">Sed cursus bibendum geugiat. In orci sapien</h3>
+                    <span class="section__news-date">Jan 11, 2020 - Robert O'Malley</span>
+                </a>
+            </div>
+        </div>
+        <div class="section__faq container container-small">
             <div>
-                <h2 class="section__questions-title">Your Questions Answered and then some</h2>
-                <p class="section__questions-desc">At vero eos et accusamus et iusto odio dignissims ducimus qui
+                <h2 class="section__faq-title">Your Questions Answered and then some</h2>
+                <p class="section__faq-desc">At vero eos et accusamus et iusto odio dignissims ducimus qui
                     blanditiis preasentium voluptatum
                     delenti atque corrupti quos dolores.</p>
             </div>
-            <div class="section__questions-questions">
-                <details>
+            <div class="section__faq-questions">
+                <details class="js_faq">
                     <summary>Dignissim neque aliquet roin sed turpis et purus ultricies scelerisque</summary>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo atque sequi autem in
-                        quasi suscipit, reiciendis iusto asperiores rerum corporis pariatur ad ex beatae similique rem
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo atque sequi autem
+                        in
+                        quasi suscipit, <a href="">reiciendis iusto</a> asperiores rerum corporis pariatur ad ex beatae
+                        similique
+                        rem
                         qui,
                         libero vel?</p>
                 </details>
-                <details>
+                <details class="js_faq">
                     <summary>Et harum quidem rerum facilis est expedita distinctio</summary>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo atque sequi autem in
-                        quasi suscipit, reiciendis iusto asperiores rerum corporis pariatur ad ex beatae similique rem
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo atque sequi autem
+                        in
+                        quasi suscipit, reiciendis iusto asperiores rerum corporis pariatur ad ex beatae similique
+                        rem
                         qui,
                         libero vel?</p>
                 </details>
-                <details>
+                <details class="js_faq">
                     <summary>Nulla porta urna sit amet sagittis</summary>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo atque sequi autem in
-                        quasi suscipit, reiciendis iusto asperiores rerum corporis pariatur ad ex beatae similique rem
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo atque sequi autem
+                        in
+                        quasi suscipit, reiciendis iusto asperiores rerum corporis pariatur ad ex beatae similique
+                        rem
                         qui,
                         libero vel?</p>
                 </details>
-                <details>
+                <details class="js_faq">
                     <summary>Quos dolores et quas molestias excepturi sint occaecati cupuditate</summary>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo atque sequi autem in
-                        quasi suscipit, reiciendis iusto asperiores rerum corporis pariatur ad ex beatae similique rem
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo atque sequi autem
+                        in
+                        quasi suscipit, reiciendis iusto asperiores rerum corporis pariatur ad ex beatae similique
+                        rem
                         qui,
                         libero vel?</p>
                 </details>

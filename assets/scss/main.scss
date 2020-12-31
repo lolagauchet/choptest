@@ -1,6 +1,7 @@
 
 
 @import 'vendor/reset';
-@import 'layout/typography';
-@import 'layout/commons';
+@import 'commons/variables';
+@import 'commons/commons';
 @import 'content/section-basic';
+@import 'content/section-advanced';
