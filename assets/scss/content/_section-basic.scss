@@ -94,8 +94,9 @@
             
         }
         &-desc{
-            font-weight: 300;
+            font-weight: 400;
             font-size: 15px;
+            color: lighten($text_color, 20%);
         }
     }
 }

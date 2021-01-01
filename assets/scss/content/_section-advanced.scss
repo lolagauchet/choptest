@@ -1,6 +1,6 @@
 
 .section__advanced{
-    margin-top: 200px;
+    margin-top: 180px;
     @media screen and (max-width: $tablet) {
         margin-top: 100px;
     }
@@ -26,7 +26,7 @@
             text-align: center;
             padding: 0 280px;
             font-size: 22px;
-            font-weight: 300;
+            font-weight: 400;
             position: relative;
             &:before{
                 width: 100%;
@@ -106,14 +106,14 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 46px;
+            margin-bottom: 36px;
             li{ 
                 @include transition;
                 font-size: 22px;
                 margin: 0 33px;
                 color: darken($grey, 20%);
                 font-weight: 400;
-                border-bottom: 1px solid transparent;
+                border-bottom: 2px solid transparent;
                 cursor: pointer; 
                 &.active,
                 &:hover{
@@ -174,9 +174,9 @@
         }
         &-date{
             display: block;
-            margin-top: 34px;
+            margin-top: 30px;
             color:darken($grey, 20%);
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
         }
         &-img {
@@ -208,6 +208,7 @@
         }
         &-title{
             margin-bottom: 18px;
+            font-weight: 700;
         }
         &-desc{
             font-weight: 300;
@@ -226,12 +227,12 @@
             summary{
                 @include transition;
                 cursor: pointer;
-                font-size: 15px;
+                font-size: 16px;
                 font-weight: 600;
                 position: relative;
-                margin-bottom: 36px;
+                margin-bottom: 30px;
                 outline: none;
-                padding-right: 40px;
+                padding-right: 30px;
                 &::-webkit-details-marker {
                     display: none;
                 }
@@ -275,9 +276,25 @@
             margin-bottom: 40px;
             align-items: center;
         }
+        &-title{
+            font-size: 36px;
+            font-weight: 700;
+            @media screen and (max-width: $tablet) {
+                font-size: 32px;
+            }
+            @media screen and (max-width: $mobile) {
+                font-size: 30px;
+            }
+        }
         &-wrapper{
             padding-bottom: 80px;
             position: relative;
+            @media screen and (max-width: $tablet) {
+                padding-bottom: 60px;
+            }
+            @media screen and (max-width: $mobile) {
+                padding-bottom: 40px;
+            }
             &:after{
                 position: absolute;
                 content: "";
@@ -346,7 +363,7 @@
         }
         h3{
             @include transition;
-            font-weight: 700;
+            font-weight: 600;
             margin-top: 28px;
             padding-left: 10px;
         }

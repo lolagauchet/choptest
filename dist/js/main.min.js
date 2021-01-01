@@ -1,5 +1,6 @@
 (function ($) {
 
+    // QUOTE SLIDER
     $('.section__quote-slider').slick({
         dots: true,
         arrow: true,
@@ -12,7 +13,7 @@
             }
         ]
     });
-
+    // SECTOR SLIDER 
     $('.section__sectors-slider').slick({
         slidesToShow: 3.5,
         infinite: false,
@@ -34,23 +35,19 @@
             }
         ]
     });
-
-
+    // FAQ 
     $(document).on("click", ".js_faq", function () {
         $(this).siblings().removeAttr("open");
     });
 
-    $('.section__news-item').each(function () {
-        console.log($(this).attr('data-tag'))
-    });
-
+    // NEWS LISTING TAG 
     $(document).on("click", ".js_tag", function () {
         var $tag = $(this).attr('data-tag');
-
         $(this).addClass('active').siblings().removeClass('active');
         $('.js_news').removeClass('active');
         $('.js_news').each(function () {
             $itemTag = $(this).attr('data-tag');
+            // chech if item tag is the same as the tag selected
             if ($tag === $itemTag || $tag === 'all') {
                 $(this).addClass('active')
             }
@@ -62,7 +59,6 @@
         } else {
             $('.js-no-result').remove()
         }
-
     });
 
 })(jQuery);
